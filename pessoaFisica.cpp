@@ -2,12 +2,31 @@
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 PessoaFisica::PessoaFisica(){
-	cpf = "00000000000"
+
 }
+PessoaFisica::PessoaFisica(string nome, string telefone, string endereco, string cpf):
+Pessoa(nome,telefone,endereco){
+	this->cpf = cpf;
+}
+
 void PessoaFisica::setCpf(string cpf){
 	this->cpf = cpf;
 }
 string PessoaFisica::getCpf(){
 	return cpf;
+}
+string PessoaFisica::toString(){
+
+	std::string s;
+	s.append(this->getNome());
+	s.append(" ");
+	s.append(this->getTelefone());
+	s.append(" ");
+	s.append(this->getEndereco());
+	s.append(" ");
+	s.append(this->getCpf());
+	return s;
 }

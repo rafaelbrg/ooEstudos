@@ -1,8 +1,16 @@
 #include "pessoaJuridica.hpp"
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 PessoaJuridica::PessoaJuridica(){
-	cnpj = " ";
+
 }
+PessoaJuridica::PessoaJuridica(string cnpj){
+	this->cnpj = cnpj;
+}
+
 
 void PessoaJuridica::setCnpj(string cnpj){
 	this->cnpj = cnpj;

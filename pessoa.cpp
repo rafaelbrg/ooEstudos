@@ -1,10 +1,20 @@
 #include "pessoa.hpp"
 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 Pessoa::Pessoa(){
-	nome="rafael";
-	telefone="00000000";
-	endereco="lalala";
+
 }
+Pessoa::Pessoa(string nome, string telefone, string endereco){
+	this->nome = nome;
+	this->telefone = telefone;
+	this->endereco = endereco;
+}
+
+
 
 string Pessoa::getNome(){
 	return nome;
@@ -28,3 +38,4 @@ string Pessoa::getEndereco(){
 void Pessoa::setEndereco(string endereco){
 	this->endereco = endereco;
 }
+

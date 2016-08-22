@@ -3,7 +3,6 @@
 
 #include <string>
 #include <iostream>
-#include "pessoa.hpp"
 
 using namespace std;
 
@@ -13,11 +12,11 @@ private:
 	string cnpj;
 
 public:
-	PessoaJuridica(string nome, string telefone, string endereco,
-	string cnpj);
-	~PessoaJuridica();
-	void PessoaJuridica::setCnpj(string cnpj);
-	string PessoaJuridica::getCnpj();
-}
+	PessoaJuridica();
+	PessoaJuridica(string cnpj);
+
+	void setCnpj(string cnpj);
+	string getCnpj();
+};
 
 #endif 
