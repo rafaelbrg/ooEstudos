@@ -1,5 +1,4 @@
 #include "pessoa.hpp"
-//teste
 
 Pessoa::Pessoa(){
 	nome="rafael";
