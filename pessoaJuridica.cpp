@@ -7,6 +7,7 @@ using namespace std;
 PessoaJuridica::PessoaJuridica(){
 
 }
+<<<<<<< HEAD
 PessoaJuridica::PessoaJuridica(string nome, string telefone, string endereco,string cnpj):
 Pessoa(nome,telefone,endereco){
 	this->cnpj = cnpj;
@@ -14,6 +15,12 @@ Pessoa(nome,telefone,endereco){
 PessoaJuridica::~PessoaJuridica(){
 
 }
+=======
+PessoaJuridica::PessoaJuridica(string cnpj){
+	this->cnpj = cnpj;
+}
+
+>>>>>>> 54b53e215fcbc6a3b1db74e1cbbaba5e96c9b1d3
 
 void PessoaJuridica::setCnpj(string cnpj){
 	this->cnpj = cnpj;
@@ -21,6 +28,7 @@ void PessoaJuridica::setCnpj(string cnpj){
 string PessoaJuridica::getCnpj(){
 	return cnpj;
 }
+<<<<<<< HEAD
 
 string PessoaJuridica::toString(){
 	
@@ -36,3 +44,5 @@ string PessoaJuridica::toString(){
 
 	return s;
 }
+=======
+>>>>>>> 54b53e215fcbc6a3b1db74e1cbbaba5e96c9b1d3

@@ -16,7 +16,10 @@ private:
 public:
 	Pessoa();
 	Pessoa(string nome, string telefone, string endereco);
+<<<<<<< HEAD
 	~Pessoa();
+=======
+>>>>>>> 54b53e215fcbc6a3b1db74e1cbbaba5e96c9b1d3
 
 	string getNome();
 	void setNome(string nome);

@@ -11,9 +11,12 @@ PessoaFisica::PessoaFisica(string nome, string telefone, string endereco, string
 Pessoa(nome,telefone,endereco){
 	this->cpf = cpf;
 }
+<<<<<<< HEAD
 PessoaFisica::~PessoaFisica(){
 
 }
+=======
+>>>>>>> 54b53e215fcbc6a3b1db74e1cbbaba5e96c9b1d3
 
 void PessoaFisica::setCpf(string cpf){
 	this->cpf = cpf;
@@ -21,7 +24,10 @@ void PessoaFisica::setCpf(string cpf){
 string PessoaFisica::getCpf(){
 	return cpf;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54b53e215fcbc6a3b1db74e1cbbaba5e96c9b1d3
 string PessoaFisica::toString(){
 
 	std::string s;
@@ -34,4 +40,7 @@ string PessoaFisica::toString(){
 	s.append(this->getCpf());
 	return s;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 54b53e215fcbc6a3b1db74e1cbbaba5e96c9b1d3

@@ -13,9 +13,13 @@ Pessoa::Pessoa(string nome, string telefone, string endereco){
 	this->telefone = telefone;
 	this->endereco = endereco;
 }
+<<<<<<< HEAD
 Pessoa::~Pessoa(){
 
 }
+=======
+
+>>>>>>> 54b53e215fcbc6a3b1db74e1cbbaba5e96c9b1d3
 
 
 string Pessoa::getNome(){
