@@ -14,7 +14,7 @@ private:
 
 public:
 	PessoaFisica();
-	PessoaFisica(string nome, string telefone, string endereco,string cpf);
+	PessoaFisica(string nome, string telefone, string endereco, string cpf);
 	~PessoaFisica();
 
 	void setCpf(string cpf);
