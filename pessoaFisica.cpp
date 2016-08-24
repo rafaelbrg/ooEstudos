@@ -1,0 +1,35 @@
+#include "pessoaFisica.hpp"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+PessoaFisica::PessoaFisica(){
+
+}
+PessoaFisica::PessoaFisica(string nome, string telefone, string endereco, string cpf):
+Pessoa(nome,telefone,endereco){
+	this->cpf = cpf;
+}
+PessoaFisica::~PessoaFisica(){
+
+}
+
+void PessoaFisica::setCpf(string cpf){
+	this->cpf = cpf;
+}
+string PessoaFisica::getCpf(){
+	return cpf;
+}
+string PessoaFisica::toString(){
+
+	std::string s;
+	s.append(this->getNome());
+	s.append(" ");
+	s.append(this->getTelefone());
+	s.append(" ");
+	s.append(this->getEndereco());
+	s.append(" ");
+	s.append(this->getCpf());
+	return s;
+}
